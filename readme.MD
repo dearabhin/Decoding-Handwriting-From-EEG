@@ -27,10 +27,10 @@ Our methodology combines a standard, publicly available dataset with the advance
 #### **3.1 Dataset: BCI Competition IV, Dataset 2a**
 
 To ensure our results are reproducible and benchmarked against a known standard, we used the **BCI Competition IV, Dataset 2a**.
-* [cite_start]**Provider**: Graz University of Technology[cite: 1].
-* [cite_start]**Task**: Cued 4-class motor imagery (left hand, right hand, feet, tongue)[cite: 1].
-* [cite_start]**Subjects**: 9 healthy subjects[cite: 1].
-* [cite_start]**Data Specs**: 22 EEG channels and 3 EOG channels, sampled at 250Hz[cite: 1].
+* **Provider**: Graz University of Technology[cite: 1].
+* **Task**: Cued 4-class motor imagery (left hand, right hand, feet, tongue)[cite: 1].
+* **Subjects**: 9 healthy subjects[cite: 1].
+* **Data Specs**: 22 EEG channels and 3 EOG channels, sampled at 250Hz[cite: 1].
 * **Data Format**: The data is provided in the **General Data Format (.gdf)**, a standard format for biosignal data. We used the `mne-python` library to directly load these files.
 
 #### **3.2 Data Preprocessing**
@@ -88,19 +88,14 @@ Future work could extend this project in several exciting directions:
 2.  **Onset Detection**: Adapt the pipeline to work on continuous data, focusing on developing a model that can detect *when* a motor imagery task is being performed, not just classifying a pre-defined epoch.
 3.  **Real-Time Implementation**: Explore the feasibility of deploying the trained model in a real-time environment using a consumer-grade EEG headset.
 
-### **7. Potential Startup Idea: BCI for Kerala**
-
-This project forms the basis for a potential startup idea: creating an **affordable, open-source BCI learning kit for engineering students in Kerala**.
-* **The Product**: A low-cost EEG headset (sourced or assembled locally in Kochi) bundled with a Python-based software package (like the one developed in this project) that allows students to experiment with real-time signal processing and ML models.
-* **The Mission**: To democratize access to neurotechnology education and create a skilled talent pool in Kerala for the growing global BCI industry. This hands-on tool could be sold to colleges like MEC and tech enthusiasts, fostering a community of BCI developers and researchers right here in India.
-
 ---
 
 ### **8. How to Run This Project**
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/](https://github.com/)<YOUR_GITHUB_USERNAME>/eeg-imagined-handwriting-decoder.git
+    git clone https://github.com/dearabhin/Decoding-Handwriting-From-EEG.git
+    cd Decoding-Handwriting-From-EEG
     ```
 2.  **Download the Data**
     - Download **Dataset 2a** from the [BCI Competition IV website](http://www.bbci.de/competition/iv/dataset_2a.html).
